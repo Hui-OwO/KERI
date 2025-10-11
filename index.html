@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국전기연구원</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+        <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/2e10de9f08.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 내비 -->
+        <header>
+            <div class="head">
+                <h1 class="logo"><a href="index.html"><img src="images/LOGO.png" alt="한국전기연구원"></a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">정보공개</a></li>
+                        <li><a href="#">KERI소개</a></li>
+                        <li><a href="subpage/sub01.html">연구분야</a></li>
+                        <li><a href="subpage/sub02.html">시험인증</a></li>
+                        <li><a href="#">기술사업화</a></li>
+                        <li><a href="#">열린KERI</a></li>
+                        <li><a href="#">KERI홍보관</a></li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <ul>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">인트라넷</a></li>
+                        <li><a href="#">어린이</a></li>
+                        <li><a href="#">eng</a></li>
+                        <li><a class="nav_search" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 메인 비주얼 -->
+        <section class="main_visual">
+            <!-- 배경 이미지 -->
+            <div class="visual">
+                <div class="visual_content">
+                    <div class="visual_left">
+                        <img src="images/M_visual_logo.png" alt="KERI" class="main_logo">
+                        <h2 class="main_title">미래시대, 전기화 세상의 중심</h2>
+                        <div class="search">
+                            <input type="text" placeholder="KERI 기술 검색">
+                            <button class="search_btn">
+                                <img src="images/search.png" alt="검색">
+                            </button>
+                        </div>
+                        <div class="main_paging">
+                            <span>01-04</span>
+                            <div class="pg_btn">
+                                <button class="paging_btn"><span></span></button>
+                                <button class="paging_btn"><span></span></button>
+                                <button class="paging_btn"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual_right">
+                        <div class="tech_sector">
+                            <h3>KERI 기술분야</h3>
+                            <div class="tech_grid">
+                                <button>첨단전기 소재부품</button>
+                                <button>지능형 전력망</button>
+                                <button>차세대 전지</button>
+                                <button>전기응용</button>
+                                <button>E-모빌리티</button>
+                                <button>의료·바이오</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 기술소개 자료 -->
+        <section class="tech_brief">
+            <div class="tech">
+                <div class="tech_top">
+                    <div class="tech_title">
+                        <h2>기술소개 자료</h2>
+                    </div>
+                    <div class="tech_category">
+                        <button class="active">전체</button>
+                        <button>의료&middot;바이오</button>
+                        <button>E-모빌리티</button>
+                        <button>차세대 전지</button>
+                        <button>전기응용</button>
+                        <button class="plus_btn"><span></span></button>
+                    </div>
+                </div>
+                
+                <div class="tech_content_wrap">
+                    <!-- 대표 기술 -->
+                    <div class="tech_main">
+                        <div class="tech_main_img">
+                            <img src="images/tech_img_main.jpg" alt="펨토초 광섬유 레이저 기술">
+                        </div>
+                        <div class="tech_main_info">
+                            <span class="tech_tag green">의료&middot;바이오</span>
+                            <h3>펨토초 광섬유 레이저 기술</h3>
+                            <span class="tech_author">허두창</span>
+                            <p class="tech_desc">포화흡수체 이용한 수동 모드잠금<br>(Mode-Locking) 기반의 펨토초<br>광섬유 레이저 기술</p>
+                            <div class="tech_main_btns">
+                                <button class="consult_btn">기술이전 상담 <span></span></button>
+                                <button class="download_btn">다운로드 <span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 기술 리스트 -->
+                    <div class="tech_list">
+                        <div class="tech_card">
+                            <div class="tech_card_img">
+                                <img src="images/tech_img01.jpg" alt="고성능 저전력 스마트 보청기 시스템 기술">
+                                <span class="tech_tag green">의료·바이오</span>
+                                <button class="card_download"><span></span></button>
+                            </div>
+                            <div class="tech_card_title">고성능 저전력 스마트<br>보청기 시스템 기술</div>
+                        </div>
+                        <div class="tech_card">
+                            <div class="tech_card_img">
+                                <img src="images/tech_img02.jpg" alt="우주항공 모빌리티용 전기 파워트레인">
+                                <span class="tech_tag blue">E-모빌리티</span>
+                                <button class="card_download"><span></span></button>
+                            </div>
+                            <div class="tech_card_title">우주항공 모빌리티용<br>전기 파워트레인</div>
+                        </div>
+                        <div class="tech_card">
+                            <div class="tech_card_img">
+                                <img src="images/tech_img03.jpg" alt="급속충전이 가능한 음극 표면처리 기술">
+                                <span class="tech_tag red">차세대 전지</span>
+                                <button class="card_download"><span></span></button>
+                            </div>
+                            <div class="tech_card_title">급속충전이 가능한음극 표면처리 기술</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <button class="plus_btn"><span></span></button> -->
+        <!-- KERI 소식 -->
+        <section class="KERI_notice">
+            <div class="notice_wrap">
+                <div class="notice_left">
+                    <div class="notice_title_row">
+                        <h2>KERI 소식</h2>
+                        <div class="notice_tabs">
+                            <div>
+                                <button class="active" data-tab="notice">공지사항</button>
+                                <button data-tab="recruit">채용정보</button>
+                                <button data-tab="press">보도자료</button>
+                            </div>
+                            <button class="plus_btn"><span></span></button>
+                        </div>
+                    </div>
+                    <div class="notice_tab_contents">
+                        <div class="notice_tab_panel active" data-tab="notice">
+                            <div class="notice_list_box">
+                                <ul class="notice_list">
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[공지] 2025년 하계휴가 일정 알림 [8.11(월)~8.14(목)]</a>
+                                        <span class="notice_date">25.08.06</span>
+                                    </li>
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[공지] 한국전기연구원 방문고객관리시스템 도입 안내</a>
+                                        <span class="notice_date">25.03.31</span>
+                                    </li>
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[공지] 단락시험설비 2025년도 연차정기점검에 따른 운휴 기간 공지</a>
+                                        <span class="notice_date">25.01.17</span>
+                                    </li>
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">공공기관 종합청렴도 평가 관련 개인정보 제3자 제공사항 알림</a>
+                                        <span class="notice_date">25.08.06</span>
+                                    </li>
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[사업공고] 2025년 창원 강소특구 이노테크 기업육성(시뮬레이션 지원) 공고</a>
+                                        <span class="notice_date">25.07.23</span>
+                                    </li>
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">「중소중견기업 인력파견 사업」공고</a>
+                                        <span class="notice_date">25.07.14</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="notice_tab_panel" data-tab="recruit">
+                            <div class="notice_list_box">
+                                <ul class="notice_list">
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[채용] 2025년 상반기 연구직 공개채용 공고</a>
+                                        <span class="notice_date">25.07.01</span>
+                                    </li>
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[채용] 청년인턴(연구지원) 채용 안내</a>
+                                        <span class="notice_date">25.06.15</span>
+                                    </li>
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[채용] 2025년 하계 현장실습생 모집</a>
+                                        <span class="notice_date">25.05.30</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="notice_tab_panel" data-tab="press">
+                            <div class="notice_list_box">
+                                <ul class="notice_list">
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[보도자료] KERI, 차세대 배터리 기술 국제학술지 게재</a>
+                                        <span class="notice_date">25.07.10</span>
+                                    </li>
+                                    <li>
+                                        <span class="notice_dot">·</span>
+                                        <a href="#">[보도자료] KERI, 전력망 AI 솔루션 개발 성공</a>
+                                        <span class="notice_date">25.06.28</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notice_right">
+                    <div class="exam_title_row">
+                        <h2>시험인증</h2>
+                        <button class="plus_btn"><span></span></button>
+                    </div>
+                    <div class="exam_grid">
+                        <a class="exam_card exam_red" href="#">
+                            <img src="images/exam_icon1.png" alt="시험접수">
+                            <div class="exam_title">시험접수</div>
+                        </a>
+                        <a class="exam_card exam_blue" href="#">
+                            <img src="images/exam_icon2.png" alt="시험 문의">
+                            <div class="exam_title">시험 문의</div>
+                        </a>
+                        <a class="exam_card exam_yellow" href="#">
+                            <img src="images/exam_icon3.png" alt="시험인증서비스 소개">
+                            <div class="exam_title">시험인증서비스 소개</div>
+                        </a>
+                        <a class="exam_card exam_green" href="#">
+                            <img src="images/exam_icon4.png" alt="시험인증 절차">
+                            <div class="exam_title">시험인증 절차</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SNS -->
+        <section class="SNS">
+            <div class="SNS_wrap">
+                <div class="SNS_title">
+                    <h2>SNS</h2>
+                    <div class="SNS_tabs">
+                        <button class="active youtube" data-sns="youtube">
+                            <span class="sns_icon youtube"></span>
+                            <span class="sns_name">Youtube</span>
+                        </button>
+                        <button class="facebook" data-sns="facebook">
+                            <span class="sns_icon facebook"></span>
+                            <span class="sns_name">Facebook</span>
+                        </button>
+                        <button class="instagram" data-sns="instagram">
+                            <span class="sns_icon instagram"></span>
+                            <span class="sns_name">Instagram</span>
+                        </button>
+                        <button class="blog" data-sns="blog">
+                            <span class="sns_icon blog"></span>
+                            <span class="sns_name">Naver blog</span>
+                        </button>
+                        <button class="plus_btn"><span></span></button>
+                    </div>
+                </div>
+                <div class="SNS_list">
+                    <div class="SNS_tab_panel active" data-sns="youtube">
+                        <div class="SNS_card">
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/youtube_img1.jpg" alt="유튜브 이미지1"></a>
+                                <p>전자레인지 원리로 농약 없이 병해충 방제? 마이크로파...</p>
+                            </div>
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/youtube_img2.jpg" alt="유튜브 이미지2"></a>
+                                <p>[KERI TV]전기선박부터 플라잉카까지! 미래 전기 모빌...</p>
+                            </div>
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/youtube_img3.jpg" alt="유튜브 이미지3"></a>
+                                <p>[KERI TV]새로운 미래를 만들어갈 탄화규소(SiC)...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="SNS_tab_panel" data-sns="facebook">
+                        <div class="SNS_card">
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/facebook_img1.jpg" alt="페이스북 이미지1"></a>
+                                <p>KERI Facebook 소식 1</p>
+                            </div>
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/facebook_img2.jpg" alt="페이스북 이미지2"></a>
+                                <p>KERI Facebook 소식 2</p>
+                            </div>
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/facebook_img3.jpg" alt="페이스북 이미지3"></a>
+                                <p>KERI Facebook 소식 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="SNS_tab_panel" data-sns="instagram">
+                        <div class="SNS_card">
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/instagram_img1.jpg" alt="인스타그램 이미지1"></a>
+                                <p>KERI Instagram 소식 1</p>
+                            </div>
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/instagram_img2.jpg" alt="인스타그램 이미지2"></a>
+                                <p>KERI Instagram 소식 2</p>
+                            </div>
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/instagram_img3.jpg" alt="인스타그램 이미지3"></a>
+                                <p>KERI Instagram 소식 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="SNS_tab_panel" data-sns="blog">
+                        <div class="SNS_card">
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/blog_img1.jpg" alt="블로그 이미지1"></a>
+                                <p>KERI Blog 소식 1</p>
+                            </div>
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/blog_img2.jpg" alt="블로그 이미지2"></a>
+                                <p>KERI Blog 소식 2</p>
+                            </div>
+                            <div class="SNS_content">
+                                <a href="#"><img src="images/blog_img3.jpg" alt="블로그 이미지3"></a>
+                                <p>KERI Blog 소식 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span></span>
+            </div>
+        </section>
+        <!-- 배너 -->
+        <section class="banner_wrap">
+            <div class="banner">
+                <span></span>
+                <div class="bnnr_content">
+                    <a href="#"><img src="images/banner01.png" alt="정부24"></a>
+                    <a href="#"><img src="images/banner02.png" alt="과학기술정보통신부"></a>
+                    <a href="#"><img src="images/banner03.png" alt="산업통상자원부"></a>
+                    <a href="#"><img src="images/banner04.png" alt="국가과학기술연구회"></a>
+                    <a href="#"><img src="images/banner05.png" alt="과학기술연합대학원대학교"></a>
+                </div>
+                <span></span>
+            </div>
+        </section>
+        <!-- 푸터 -->
+        <footer>
+            <div class="footer">
+                <ul class="bottom_menu">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">관련사이트</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">직원찾기</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">관련기관배너 모음</a></li>
+                </ul>
+                <div class="address">
+                    <div class="ft_logo"><img src="images/ft_logo.png" alt="한국전기연구원"></div>
+                    <address>
+                        창원본원 :(51543) 경상남도 창원시 성산구 전기의길 12 (성주동) / TEL(055)280-1114 / FAX(055)280-1216<br>
+                        안산분원 :(15588) 경기도 안산시 상록구 항가울로 111 (사동) / TEL(031)8040-4114 / FAX(031)8040-4029<br>
+                        의왕분원 :(16029) 경기도 의왕시 내손순환로 138 (내손동) / TEL(031)420-6114 / FAX(031)420-6009<br>
+                        광주스마트그리드본부 :(61751) 광주광역시 남구 도시첨단산업로 27(압촌동) / TEL(062)606-7214 / FAX(062)606-7226<br>
+                        홈페이지 관리 담당자 / TEL(055)-280-1074 / MAIL : jihyun@keri.re.kr
+                        <p>Copyright&copy;2025 Korea Electrotechnology Research Institute</p>
+                    </address>
+                    <div class="ft_mark">
+                        <a href="#"><img src="images/ft_web_watch.png" alt="WEB 접근성 마크"></a>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
