@@ -60,4 +60,56 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    // --- LNB 아코디언 메뉴 기능 ---
+    const lnbMenuItems = document.querySelectorAll('.lnb_menu > li');
+
+    // 페이지 로드 시 활성화된 메뉴의 서브메뉴가 보이도록 먼저 처리
+    const activeLnbItem = document.querySelector('.lnb_menu > li.active');
+    if (activeLnbItem) {
+        const activeSubMenu = activeLnbItem.querySelector('.sub_menu');
+        if (activeSubMenu) {
+            activeSubMenu.style.display = 'block';
+        }
+    }
+
+    lnbMenuItems.forEach(item => {
+        const link = item.querySelector('a');
+        const subMenu = item.querySelector('.sub_menu');
+
+        // 서브메뉴가 있는 항목에만 클릭 이벤트 추가
+        if (subMenu) { 
+            link.addEventListener('click', function (e) {
+                // 실제 페이지 이동이 필요하다면 이 줄을 주석 처리하거나 삭제하세요.
+                e.preventDefault(); 
+
+                const isActive = item.classList.contains('active');
+
+                // 모든 메뉴를 우선 닫고 초기화
+                lnbMenuItems.forEach(i => {
+                    i.classList.remove('active');
+                    const icon = i.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                    const sub = i.querySelector('.sub_menu');
+                    if (sub) {
+                        sub.style.display = 'none';
+                    }
+                });
+
+                // 만약 클릭한 메뉴가 닫혀 있었다면, 해당 메뉴만 열기
+                if (!isActive) {
+                    item.classList.add('active');
+                    const icon = item.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    }
+                    subMenu.style.display = 'block';
+                }
+            });
+        }
+    });
 });
